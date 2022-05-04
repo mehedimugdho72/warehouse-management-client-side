@@ -51,11 +51,12 @@ const Facilities = () => {
                     </div>
                     <div>
                         <h2>There is room for everyone</h2>
-                        <p>Depending upon your spend expectations we can connect you with the very best in finishes, furnishings, art and more. It’s our experience that fuels our creativity. Also from experience we have learnt how to suit it to your spend!</p>
+                        <p>Depending upon your spend expectations we can connect you with the very best in finishes, furnishings, art and more. It’s our experience that fuels our creativity. Also from experience we have learned how to suit your needs!</p>
                     </div>
                     <div>
                         <h2>The Beauty Is In the Details</h2>
-                        <p>We bring the balance between progressive and timeless designs. But sometimes it’s the smallest of touches that can elevate a room from the “nice” to the “beautiful”!</p>
+                        <p>We bring the balance between progressive and timeless designs. But sometimes it’s the smallest of touches that can elevate a room from the “nice” to the “beautiful”.
+                        Which the customer is forced to choose.!</p>
                     </div>
                     <div>
                         <h2>Collaboration at the heart</h2>

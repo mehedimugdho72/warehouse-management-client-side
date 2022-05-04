@@ -21,7 +21,7 @@ const Service = ({ service }) => {
                 <h5>Quantity:-$ {quantity}</h5>
                 <p>{description}</p>
                 <h5>Supplier:-{supplierName}</h5>
-                <button onClick={() => navigateToServiceDetail(id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-primary btn-lg d-block mx-auto ">Book {name}</button>
+                <button onClick={() => navigateToServiceDetail(id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-primary btn-md">Book {name}</button>
             </div>
         </div>
     );

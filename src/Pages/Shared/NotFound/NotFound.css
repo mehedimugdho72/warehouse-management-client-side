@@ -1,0 +1,20 @@
+.notFound button{
+    background-color: rgb(202, 80, 19);
+    border-radius: 50px;
+    font-size: 24px;
+    color:white;
+}
+.notFound{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.notFound a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .notFound button{
+        font-size: medium;
+        margin-top: 1rem;
+    }
+}
