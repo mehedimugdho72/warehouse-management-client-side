@@ -6,7 +6,7 @@ const Services = () => {
     const [services, setServices] = useState([])
     const homeServices = services.slice(0, 6)
     useEffect(()=>{
-        fetch("Services.json")
+        fetch("services.json")
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
