@@ -1,0 +1,69 @@
+.facilities-container {
+
+    padding: 1rem;
+    margin: 4rem, 0rem;
+}
+
+.icon-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icon-img img {
+    color: wheat;
+}
+
+.icon-revese {
+    display: flex;
+}
+
+.description p {
+    margin: 0%;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.description {
+    margin-left: 00.5rem;
+}
+
+.horizontal-line {
+    height: 2px;
+    width: 95%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.choose-container {
+    background-color: transparent;
+    background-image: linear-gradient(120deg, #EC6599 0%, #4129AC 100%);
+    color: white;
+    text-align: center;
+    margin: 4rem;
+    border-radius: 2rem;
+}
+
+/* --------------------------------------------
+        Responsive for mobile device
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    .icon-img img {
+        height: 30%;
+        width: 30%;
+        color: white;
+    }
+
+    .description p {
+        margin: 0%;
+        font-size: xx-small;
+    }
+
+    .facilities-container {
+        width: 100%;
+    }
+    .choose-container {
+        width: 100%;
+        margin: 0;
+    }
+}

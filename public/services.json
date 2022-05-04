@@ -1,0 +1,110 @@
+[
+    {
+        "_id": 1,
+        "name": "Spareribs Sofa",
+        "price": "589",
+        "quantity":"20",
+        "supplierName":"Rana Hossain",
+        "description": " The generous seat and back cushions are upholstered in sand-beige Dacron with multi-density polyurethane padding, framed between gently sloped arms and supported by black-finished solid wood legs. It is available in other wood finishes.",
+        "img": "https://i.ibb.co/r0KGq5Q/02-2.png"
+    },
+    {
+        "_id": 2,
+        "name": "Smart Sofa",
+        "price": "550",
+        "quantity":"30",
+        "supplierName":"Anik Hasan",
+        "description": "Original, authentic design Inspired by shapes and colors from one of our favorite modern era’s. Everything about Smart sofa is effortlessly contemporary. .",
+        "img": "https://i.ibb.co/zJKPn6K/05-1.png"
+    },
+    {
+        "_id": 3,
+        "name": "Bath Furniture",
+        "price": "790",
+        "quantity":"40",
+        "supplierName":"Raja Chowdhury",
+        "description": "Four solid wooden legs suspend the 71 long freestanding tub from the ground. Orchestrating this unique modernist design involved boldly re-envisioning the potential of the modern freestanding tub.",
+        "img": "https://i.ibb.co/8MDRp7g/bathroom.jpg"
+    },
+    {
+        "_id": 4,
+        "name": "Bedroom Furniture",
+        "price": "850",
+        "quantity":"10",
+        "supplierName":"Mehedi Hasan",
+        "description": "The upholstered bed will completely transform any bedroom. The stylish jewel tones, clean lines, and velvet tufted features bring in a more down-to-earth feel to any bedroom you decide to upgrade. This bed is the way to start.",
+        "img": "https://i.ibb.co/h8q7Yhn/bedroom.jpg"
+    },
+    {
+        "_id": 5,
+        "name": "Dining Furniture",
+        "price": "450",
+        "quantity":"25",
+        "supplierName":"Adrita Begum",
+        "description": "A real American Walnut wood modern farmhouse table, paired with the eclectic to modern dining chairs or the matching bench made for this table.",
+        "img": "https://i.ibb.co/1qTtzCb/dining-Furniture.jpg"
+    },
+    {
+        "_id": 6,
+        "name": "Kitchen Furniture",
+        "price": "625",
+        "quantity":"34",
+        "supplierName":"Mithila Begum",
+        "description": "Pretend stove burner features fun lights and cooking sounds Plenty of kitchen storage space, including the recycle bin, hooks for hanging utensils and tea/coffee cups.",
+        "img": "https://i.ibb.co/GCGjQHL/kitchen.jpg"
+    },
+    {
+        "_id": 7,
+        "name": "Round Office",
+        "price": "389",
+        "quantity":"30",
+        "supplierName":"Rakib Hossain",
+        "description": " 1.Ergonomic PU leather executive office chair with perfect lumbar support and extra thick padding for the ultimate comfort .",
+        "img": "https://i.ibb.co/pwJZxWW/Modern-Round-Office.jpg"
+    },
+    {
+        "_id": 8,
+        "name": "Office Desk",
+        "price": "850",
+        "quantity":"24",
+        "supplierName":"Jhanker Mahbub",
+        "description": "executive desk,office desk ,executive office desk Shape L shaped Packaging Film+foam+carton+wooden frame (4 layers protection) Size 3300W*2320D*750H Material E1 MDF melamine board Products Character Anti-Water, Anti-Scratch, Anti-Dirty .",
+        "img": "https://i.ibb.co/94kBysT/office-table.jpg"
+    },
+    {
+        "_id": 9,
+        "name": "Wardrobe",
+        "price": "730",
+        "quantity":"40",
+        "supplierName":"Amir Khan",
+        "description": "Being a popular entity, we are providing an inclusive series of Waterproof Fabric Foldable Wardrobe. Our range is extensively employed by our customers owing to high strength and longer life service.",
+        "img": "https://i.ibb.co/hKsr3y2/Foldable-Wardrobe.jpg"
+    },
+    {
+        "_id": 10,
+        "name": "Wine Cabinet",
+        "price": "415",
+        "quantity":"10",
+        "supplierName":"Anisur Rahman",
+        "description": "Add a chic contemporary appeal to your dining room with the Pleasanton wine cabinet. Its flawless, sturdy construction creates an organized piece.",
+        "img": "https://i.ibb.co/9TvT6QW/Wine-Cabinet.jpg"
+    },
+    {
+        "_id": 11,
+        "name": "Dining Furniture",
+        "price": "550",
+        "quantity":"25",
+        "supplierName":"Adrita Begum",
+        "description": "True to original modernist arching design True to original curvature and dimension profile The wood has been uniformly kiln dried to a stabilized moisture level Triple sanded wood for the smoothest possible surfaces",
+        "img": "https://i.ibb.co/s68VNz4/STO-SB-PLATFORM-ASH.jpg"
+    },
+    {
+        "_id": 12,
+        "name": "CABINET",
+        "price": "615",
+        "quantity":"12",
+        "supplierName":"Sabila Nur",
+        "description": "The Platform Credenza. Created around the simple yet effective architectural technique of creating distance by adding space between adjoining platforms.",
+        "img": "https://i.ibb.co/b345BWM/Coffee-Table.webp"
+    }
+]

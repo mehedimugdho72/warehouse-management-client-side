@@ -1,0 +1,17 @@
+.scrollToTop{
+    position: fixed; 
+    bottom: 5%;
+    left:94%;
+  
+}
+@media only screen and (max-width:600px) {
+    .scrollToTop{
+        position: fixed; 
+        bottom: 5%;
+        left:80%;
+      
+    }
+}
+*{
+    scroll-behavior:smooth;
+}

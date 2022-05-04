@@ -1,0 +1,18 @@
+@media only screen and (max-width:600px) {
+    .description h1{
+        font-size: xx-small;
+        line-height: 10px;
+    }
+    .description p{
+        font-size: xx-small;
+        line-height: 10px;
+    }
+    .description .btn{
+        font-size: xx-small;
+        padding: 0;
+    }
+}
+.description .btn{
+    background-color: #66ccbe;
+
+}

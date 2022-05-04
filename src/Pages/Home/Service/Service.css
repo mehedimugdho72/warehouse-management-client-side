@@ -1,0 +1,16 @@
+.service{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.service:hover{
+    transform: scale(1.1);
+    transition: .5s;
+ }
+
+.service img{
+    width: 100%;
+}
+.service button {
+    width:100%;
+}
