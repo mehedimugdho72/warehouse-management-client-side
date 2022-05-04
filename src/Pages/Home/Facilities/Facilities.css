@@ -36,14 +36,17 @@
 }
 
 .choose-container {
-    background-color: transparent;
-    background-image: linear-gradient(120deg, #EC6599 0%, #4129AC 100%);
-    color: white;
     text-align: center;
     margin: 4rem;
-    border-radius: 2rem;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 6px 6px 12px #a4a4a4,
+        -6px -6px 12px #ffffff;
+    padding: 2rem;
 }
-
+.choose-container h2, h1{
+    color: #120E43;
+}
 /* --------------------------------------------
         Responsive for mobile device
 -------------------------------------------- */
@@ -62,8 +65,10 @@
     .facilities-container {
         width: 100%;
     }
+
     .choose-container {
-        width: 100%;
-        margin: 0;
+        width: 95%;
+        margin-left: 1rem;
+
     }
 }

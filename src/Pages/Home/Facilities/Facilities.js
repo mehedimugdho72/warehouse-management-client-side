@@ -10,7 +10,7 @@ const Facilities = () => {
         <div className='choose-container'>
             <h1 className='text-center'>
                 Why You Should Choose Us?</h1>
-            <div className='facilities-container shadow-lg mb-5'>
+            <div className='facilities-container mb-5 '>
                 <div className='icon-img'>
                     <div className='icon-revese'>
                         <img src={transport} alt="" />
@@ -43,8 +43,8 @@ const Facilities = () => {
                 </div>
                 <div className='horizontal-line'></div>
             </div>
-            <div className='d-flex shadow-lg'>
-                <div className=''>
+            <div>
+                <div>
                     <div>
                         <h2>Express your style</h2>
                         <p>It is our role to help you discover your unique style and ways of expressing it through interior design. Our interior decorating process is creative, fun and inspirational! We’ll get to know you, learn about your needs, the project scope and your desired outcome.</p>
