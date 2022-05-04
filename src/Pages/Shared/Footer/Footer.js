@@ -7,21 +7,17 @@ const Footer = () => {
         <div className='footer-container'>
             <div className='about'>
                 <div className='about-title'>
-                    <div >
-                        <h3>About Us</h3>
-                        <p>WAREHOUSING and STORAGE</p>
-                    </div>
+                    <h3>About Us</h3>
+                    <p>WAREHOUSING and STORAGE</p>
                 </div>
-                <p>
-                    <p>Who We Are</p>
-                    <p>Why Choose Us</p>
-                    <p>What We Do</p>
-                    <p>Giving Back</p>
-                    <p>Media</p>
-                    <p>Our Ethos</p>
-                    <p>Buy In Bulk</p>
-                    <p>Sell With Us</p>
-                </p>
+                <p>Who We Are</p>
+                <p>Why Choose Us</p>
+                <p>What We Do</p>
+                <p>Giving Back</p>
+                <p>Media</p>
+                <p>Our Ethos</p>
+                <p>Buy In Bulk</p>
+                <p>Sell With Us</p>
             </div>
             <div>
                 <Zoom top cascade><h3 className='footer-header'>Policies</h3></Zoom>
@@ -37,7 +33,6 @@ const Footer = () => {
                     </div>
                 </Flip>
 
-
             </div>
             <div>
                 <Zoom top cascade><h3 className='footer-header'>Customer Service</h3> </Zoom>
@@ -52,7 +47,6 @@ const Footer = () => {
                         <p>Escalate Complaint</p>
                         <p>Visitor Lounge</p>
                     </div>
-
                 </Flip>
 
             </div>

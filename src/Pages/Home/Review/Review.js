@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flip, Zoom } from 'react-reveal';
 import './Review.css'
 
 const Review = (props) => {
@@ -6,15 +7,19 @@ const Review = (props) => {
     return (
         <div className='reviews-all'>
             <div>
-                <div className='client-reviews'>
-                    <img src={picture} alt='' />
-                    <div className='review-details'>
-                        <h4>{name}</h4>
-                        <h6>Ratings: {ratings}</h6>
+                <Flip right cascade>
+                    <div className='client-reviews'>
+                        <img src={picture} alt='' />
+                        <div className='review-details'>
+                            <h4>{name}</h4>
+                            <h6>Ratings: {ratings}</h6>
+                        </div>
                     </div>
-                </div>
+                </Flip>
                 <div>
-                    <p className='reviews'><small>{reviews}</small></p>
+                    <p className='reviews'><small>
+                        <Zoom top cascade>{reviews}</Zoom>
+                    </small></p>
                 </div>
             </div>
         </div>

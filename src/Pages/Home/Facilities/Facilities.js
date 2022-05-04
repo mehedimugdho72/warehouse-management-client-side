@@ -8,19 +8,19 @@ import emi from '../../../Assets/images/icon/footer icon/emi.png'
 const Facilities = () => {
     return (
         <div className='choose-container' data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <h1 className='text-center'>
                 Why You Should Choose Us?</h1>
             <div className='facilities-container mb-5 '>
                 <div className='icon-img'>
-                    <div className='icon-revese'>
-                        <img src={transport} alt="" />
-                        <div className='description'>
-                            <p>Free shipping</p>
-                            <p>Shipping in 5 days</p>
+                        <div className='icon-revese'>
+                            <img src={transport} alt="" />
+                            <div className='description'>
+                                <p>Free shipping</p>
+                                <p>Shipping in 5 days</p>
+                            </div>
                         </div>
-                    </div>
                     <div className='icon-revese'>
                         <img src={warranty} alt="" />
                         <div className='description'>
@@ -58,7 +58,7 @@ const Facilities = () => {
                     <div>
                         <h2>The Beauty Is In the Details</h2>
                         <p>We bring the balance between progressive and timeless designs. But sometimes it’s the smallest of touches that can elevate a room from the “nice” to the “beautiful”.
-                        Which the customer is forced to choose.!</p>
+                            Which the customer is forced to choose.!</p>
                     </div>
                     <div>
                         <h2>Collaboration at the heart</h2>

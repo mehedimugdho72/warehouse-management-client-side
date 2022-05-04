@@ -68,7 +68,7 @@ const Banner = () => {
                                 strings={[
                                     'Due to delays in production our inventory levels are low.',
                                     'We can not stock all of the items ilisted on our website.',
-                                    '.Everything is available to order. contact us to see availability.']}
+                                    'Everything is available to order. contact us to see availability.']}
                                 typeSpeed={40}
                                 backSpeed={50}
                                 loop >
