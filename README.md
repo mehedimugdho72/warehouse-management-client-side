@@ -1,8 +1,14 @@
-# Getting Started with Create React App
+# Project Name:- Star Furniture Warehouse.
+## [Firebase Hosting link](https://health-check-df55d.firebaseapp.com/).
+## [Server Site Code link](https://health-check-df55d.firebaseapp.com/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Project Description:-
+* This is basically a warehouse website,
+* First there is the homepage where the header, banner, services,Choose Us, Reviews, footer are shown.
+* Questions have been answered using accordion in blogs.
+* A complete flower stack website has been created.Every part of which is mobile and pc responsive,
+* Basically this website The focus is on the work of the backend.
+## Tecnology use:- Firebase, react router, react router hooks, react bootstrap , react toastify,react reavel, plain css etc.
 
 In the project directory, you can run:
 
