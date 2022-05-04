@@ -18,7 +18,7 @@ const Service = ({ service }) => {
                 <img src={img} alt="" />
                 <h3>{name}</h3>
                 <h5>Price:-$ {price}</h5>
-                <h5>Quantity:-$ {quantity}</h5>
+                <h5>Quantity:-{quantity}</h5>
                 <p>{description}</p>
                 <h5>Supplier:-{supplierName}</h5>
                 <button onClick={() => navigateToServiceDetail(id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-primary btn-md">Book {name}</button>

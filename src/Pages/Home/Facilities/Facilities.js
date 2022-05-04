@@ -7,7 +7,9 @@ import emi from '../../../Assets/images/icon/footer icon/emi.png'
 
 const Facilities = () => {
     return (
-        <div className='choose-container'>
+        <div className='choose-container' data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <h1 className='text-center'>
                 Why You Should Choose Us?</h1>
             <div className='facilities-container mb-5 '>

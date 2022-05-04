@@ -3,7 +3,8 @@ import { Accordion } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
-        <div className='mx-auto m-5 col-lg-8 col-md-12 col-sm-12 col-12'>
+        <div className='mx-auto m-5 col-lg-8 col-md-12 col-sm-12 col-12'
+        data-aos="zoom-in">
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0" className='mb-3'>
                     <Accordion.Header>Difference between Node.JS and Javascript?</Accordion.Header>

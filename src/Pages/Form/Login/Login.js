@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, Form} from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import './Login.css';
 import GoogleLogo from '../../../Assets/images/google.svg'
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -15,7 +15,7 @@ const Login = () => {
   const passwordRef = useRef('')
   const navigate = useNavigate();
   let location = useLocation();
-   let from = location.state?.from?.pathname || "/";
+  let from = location.state?.from?.pathname || "/";
   const [
     signInWithEmailAndPassword,
     user,
@@ -45,7 +45,7 @@ const Login = () => {
     return <Loading></Loading>
   }
 
-  const handleLogin =async (event) => {
+  const handleLogin = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.stopPropagation();
@@ -69,13 +69,13 @@ const Login = () => {
       await sendPasswordResetEmail(email);
       toast('Sent email');
     }
-    else{
-      toast ("please enter your email address")
+    else {
+      toast("please enter your email address")
     }
 
   }
   return (
-    <div className='w-50 mx-auto border p-5 m-5 rounded-3'>
+    <div className='col-lg-6 col-md-10 col-sm-11 col-11 mx-auto border p-5 m-5 rounded-3' data-aos="zoom-in-down">
       <h1 className='text-center text-primary'>Login</h1>
       <Form noValidate validated={validated} onSubmit={handleLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -99,7 +99,7 @@ const Login = () => {
       </Form>
       {errorElement}
       <div className='m-4'>
-        <p className='text-center mt-2'>New to Health Coach? <span onClick={navigateRegister} className='text-primary'>Please Register</span></p>
+        <p className='text-center mt-2'>New to Start Furniture? <span onClick={navigateRegister} className='text-primary'>Please Register</span></p>
         <p className='text-center mt-2'>Forget Password? <span onClick={resetPassword} className='text-primary'>Reset Password</span></p>
       </div>
       <div className='input-wrapper'>

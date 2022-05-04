@@ -63,7 +63,7 @@ const Register = () => {
         navigate("/login")
     }
     return (
-        <div className='w-50 mx-auto border p-5 m-5 rounded-3'>
+        <div className='col-lg-6 col-md-10 col-sm-11 col-11 mx-auto border p-5 m-5 rounded-3'data-aos="zoom-in-down">
             <h1 className='text-center text-primary'>Register</h1>
             <Form noValidate validated={validated} onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
