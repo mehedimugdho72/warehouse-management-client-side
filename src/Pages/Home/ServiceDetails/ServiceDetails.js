@@ -18,16 +18,16 @@ const ServiceDetails = () => {
                             </div>
                         </div>
                         <h2 className='text-center mt-3 text-white'>Service id:{serviceId}</h2>
-                        <hr className='text-white' style={{height:'3px'}}/>
+                        <hr className='text-white' style={{ height: '3px' }} />
                         <div className="d-flex justify-content-center">
-                            <Button variant="primary">
+                            <Button variant="primary" className='btn-lg mb-3'>
                                 Delivered
                             </Button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div data-aos="flip-left">
+            <div className='text-white' data-aos="flip-left">
                 <form>
                     <div className='mx-auto m-5 border p-5 rounded-3 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
                         <h1 className='text-center'>

@@ -6,7 +6,7 @@
         "sold":"10",
         "quantity": "25",
         "supplierName": "Rana Hossain",
-        "description": " The generous seat and back cushions are upholstered in sand-beige Dacron with multi-density polyurethane padding, framed between gently sloped arms and supported by black-finished solid wood legs. It is available in other wood finishes.",
+        "description": " The generous seat and back cushions are upholstered in sand-beige Dacron with multi-density polyurethane padding, framed between gently sloped arms and supported by solid wood legs.",
         "img": "https://i.ibb.co/QYkQvzv/spareribs-shofa.png"
     },
     {
@@ -16,7 +16,7 @@
         "sold":"15",
         "quantity": "30",
         "supplierName": "Anik Hasan",
-        "description": "Original, authentic design Inspired by shapes and colors from one of our favorite modern era’s. Everything about Smart sofa is effortlessly contemporary. .",
+        "description": "Original, authentic design Inspired by shapes and colors from one of our favorite modern era’s. Everything about Smart sofa is effortlessly contemporary.Smart sofa looking very nice .",
         "img": "https://i.ibb.co/tMjTZHd/smart-sofa.png"
     },
     {
@@ -36,7 +36,7 @@
         "sold":"15",
         "quantity": "35",
         "supplierName": "Mehedi Hasan",
-        "description": "The upholstered bed will completely transform any bedroom. The stylish jewel tones, clean lines, and velvet tufted features bring in a more down-to-earth feel to any bedroom you decide to upgrade. This bed is the way to start.",
+        "description": "The stylish jewel tones, clean lines, and velvet tufted features bring in a more down-to-earth feel to any bedroom you decide to upgrade. This bed is the way to start.",
         "img": "https://i.ibb.co/rFHP4JM/bedroom.png"
     },
     {
@@ -87,7 +87,7 @@
         "quantity": "40",
         "supplierName": "Amir Khan",
         "description": "Being a popular entity, we are providing an inclusive series of Waterproof Fabric Foldable Wardrobe. Our range is extensively employed by our customers owing to high strength and longer life service.",
-        "img": "https://i.ibb.co/hKsr3y2/Foldable-Wardrobe.jpg"
+        "img": "https://i.ibb.co/vq53vbJ/wardrobe.jpg"
     },
     {
         "_id": 10,
@@ -97,7 +97,7 @@
         "quantity": "50",
         "supplierName": "Anisur Rahman",
         "description": "Add a chic contemporary appeal to your dining room with the Pleasanton wine cabinet. Its flawless, sturdy construction creates an organized piece.",
-        "img": "https://i.ibb.co/9TvT6QW/Wine-Cabinet.jpg"
+        "img": "https://i.ibb.co/MGbMK2X/wine-Cabinet.webp"
     },
     {
         "_id": 11,
