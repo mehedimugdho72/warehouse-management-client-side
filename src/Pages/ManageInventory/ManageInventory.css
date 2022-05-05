@@ -1,0 +1,16 @@
+.inventory{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.inventory:hover{
+    transform: scale(1.1);
+    transition: .5s;
+ }
+
+.inventory img{
+    width: 100%;
+}
+.inventory button {
+    width:100%;
+}

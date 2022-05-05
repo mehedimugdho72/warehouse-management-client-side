@@ -8,10 +8,11 @@ import Register from './Pages/Form/Register/Register';
 import Login from './Pages/Form/Login/Login';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Header from './Pages/Shared/Header/Header';
-import ManageInventories from './Pages/Shared/ManageInventories/ManageInventories';
 import MyItems from './Pages/MyItems/MyItems';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Blogs from './Pages/Blogs/Blogs';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import ServiceDetails from './Pages/Home/ServiceDetails/ServiceDetails';
 
 
 
@@ -22,6 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/service/:serviceId" element={
+          <RequireAuth>
+            <ServiceDetails />
+          </RequireAuth>
+        } />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/manageInventories" element={
           <RequireAuth>

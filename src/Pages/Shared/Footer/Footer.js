@@ -5,10 +5,9 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <div className='about'>
+            <div className='about ms-3'>
                 <div className='about-title'>
                     <h3>About Us</h3>
-                    <p>WAREHOUSING and STORAGE</p>
                 </div>
                 <p>Who We Are</p>
                 <p>Why Choose Us</p>
@@ -62,7 +61,7 @@ const Footer = () => {
                         </p>
                         <p>Fax: +7 998 71 150 ##
                         </p>
-                        <p>anikh499@gmail.com</p>
+                        <p>rana286090@gmail.com</p>
                     </div>
 
                 </Flip>
