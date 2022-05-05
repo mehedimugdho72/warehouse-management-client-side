@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .icon-revese {
     display: flex;
 }
@@ -34,14 +35,27 @@
     text-align: center;
     margin: 4rem;
     border-radius: 15px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 6px 6px 12px #a4a4a413,
-        -6px -6px 12px #ffffff;
+    background: #ffff;
     padding: 2rem;
+    color: #ffff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.choose-container h2, h1{
-    color: #120E43;
+
+.choose-container h2,
+h1 {
+    color: white;
 }
+
+body {
+    background: url(../../../Assets/images/background/background1.jpg);
+    background-attachment: fixed;
+}
+
 /* --------------------------------------------
         Responsive for mobile device
 -------------------------------------------- */

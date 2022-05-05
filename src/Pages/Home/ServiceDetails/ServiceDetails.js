@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Alert, Button } from 'react-bootstrap';
+import React from 'react';
+import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import './ServiceDetails.css';
 
@@ -11,20 +11,20 @@ const ServiceDetails = () => {
             <div data-aos="zoom-in-down">
                 <div className='text-center rounded-3
                 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                    <Alert variant="dark">
+                    <div className='delivered'>
                         <div data-aos="zoom-in">
-                            <Alert.Heading className='fs-1 text-primary'>
+                            <div className='fs-1 text-white'>
                                 Do you really want to Delivered it?
-                            </Alert.Heading>
+                            </div>
                         </div>
-                        <h2 className='text-center mt-3'>Service id:{serviceId}</h2>
-                        <hr />
+                        <h2 className='text-center mt-3 text-white'>Service id:{serviceId}</h2>
+                        <hr className='text-white' style={{height:'3px'}}/>
                         <div className="d-flex justify-content-center">
-                            <Button variant="outline-primary">
+                            <Button variant="primary">
                                 Delivered
                             </Button>
                         </div>
-                    </Alert>
+                    </div>
                 </div>
             </div>
             <div data-aos="flip-left">

@@ -11,7 +11,7 @@ const Service = ({ service }) => {
     }
 
     return (
-        <div data-aos="flip-up">
+        <div className='mt-5' data-aos="flip-up">
             <div className='service shadow-lg' data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">

@@ -4,7 +4,12 @@
     grid-gap: 15px;
     margin-bottom: 5.8rem;
 }   
-
+.service-container{
+    background: url(../../../Assets/images/background/background4.jpg);
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+}
 
 
 @media (min-width: 320px) and (max-width: 480px) {
