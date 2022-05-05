@@ -7,6 +7,7 @@ import auth from '../../../Firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Register.css';
 
 
 const Register = () => {
@@ -63,8 +64,8 @@ const Register = () => {
         navigate("/login")
     }
     return (
-        <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3'data-aos="zoom-in-down">
-            <h1 className='text-center text-primary'>Register</h1>
+        <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3 register text-white'data-aos="zoom-in-down">
+            <h1 className='text-center'>Register</h1>
             <Form noValidate validated={validated} onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
@@ -89,7 +90,7 @@ const Register = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms And Conditions" className={agree ? "text-primary" : "text-danger"} />
+                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms And Conditions" className={agree ? "text-success" : "text-white"} />
                 </Form.Group>
                 <Button
                     disabled={!agree}
@@ -99,12 +100,12 @@ const Register = () => {
             </Form>
             {errorELement}
             <div className='m-4'>
-                <p className='text-center mt-2'>Already have an account? <span onClick={navigateLogin} className='text-primary'>Please login</span></p>
+                <p className='text-center mt-2'>Already have an account? <span onClick={navigateLogin}><u>Please login</u></span></p>
             </div>
             <div className='input-wrapper'>
                 <button onClick={() => signInWithGoogle()} className='google-auth'>
                     <img src={GoogleLogo} alt='' />
-                    <p> Continue with Google </p>
+                    <p className='mt-3'> Continue with Google </p>
                 </button>
             </div>
             <ToastContainer />
