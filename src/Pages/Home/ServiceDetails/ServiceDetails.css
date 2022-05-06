@@ -3,7 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
 }
-.delivered{
+
+.delivered {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.5px);
@@ -11,6 +12,14 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.services-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
     .serviceAdd-input {
@@ -22,6 +31,11 @@
         padding: 0;
         margin: 0;
     }
+
+    .services-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -31,5 +45,10 @@
         max-width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    .services-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

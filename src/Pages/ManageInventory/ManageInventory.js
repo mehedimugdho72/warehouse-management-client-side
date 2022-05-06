@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './ManageInventory.css';
 
 const ManageInventory = ({ manageInventory }) => {
-    const { id, img, name, price, description, supplierName, quantity } = manageInventory;
-    const navigate = useNavigate();
+    const {img, name, price, quantity } = manageInventory;
 
     return (
         <div>
@@ -15,7 +14,7 @@ const ManageInventory = ({ manageInventory }) => {
                 <h3>{name}</h3>
                 <h5>Price:-$ {price}</h5>
                 <h5>Quantity:-{quantity}</h5>
-                <button type="button" style={{ borderRadius: "50px" }} className="btn btn-primary btn-md">DELETE</button>
+                <button type="button" style={{ borderRadius: "50px" }} className="btn btn-info btn-md">DELETE</button>
             </div>
         </div>
     );

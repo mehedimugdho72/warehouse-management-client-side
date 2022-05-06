@@ -93,7 +93,7 @@ const Login = () => {
             Please provide a valid password.
           </Form.Control.Feedback>
         </Form.Group>
-        <Button style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100' variant="primary" type="submit">
+        <Button style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100' variant="info" type="submit">
           Login
         </Button>
       </Form>
