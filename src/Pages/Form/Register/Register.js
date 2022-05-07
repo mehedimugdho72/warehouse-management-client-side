@@ -58,6 +58,7 @@ const Register = () => {
         const password = passwordRef.current.value;
         await createUserWithEmailAndPassword(email, password)
         await updateProfile({ displayName: name });
+        event.target.reset()
     }
 
     const navigateLogin = () => {
@@ -94,18 +95,18 @@ const Register = () => {
                 </Form.Group>
                 <Button
                     disabled={!agree}
-                    style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100' variant="info" type="submit">
+                    style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100 fw-bolder' variant="info" type="submit">
                     Register
                 </Button>
             </Form>
             {errorELement}
             <div className='m-4'>
-                <p className='text-center mt-2'>Already have an account? <span onClick={navigateLogin}><u>Please login</u></span></p>
+                <p className='text-center mt-2'>Already have an account? <span onClick={navigateLogin}><u className='text-info'>Please login</u></span></p>
             </div>
             <div className='input-wrapper'>
                 <button onClick={() => signInWithGoogle()} className='google-auth'>
                     <img src={GoogleLogo} alt='' />
-                    <p className='mt-3'> Continue with Google </p>
+                    <p className='mt-3 fw-bolder'> Continue with Google </p>
                 </button>
             </div>
             <ToastContainer />

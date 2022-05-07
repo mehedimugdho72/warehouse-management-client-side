@@ -7,16 +7,18 @@ const Footer = () => {
         <div className='footer-container'>
             <div className='about ms-3'>
                 <div className='about-title'>
-                    <h3 className='text-info'>About Us</h3>
+                    <h3 className='text-info footer-header'>About Us</h3>
                 </div>
-                <p>Who We Are</p>
-                <p>Why Choose Us</p>
-                <p>What We Do</p>
-                <p>Giving Back</p>
-                <p>Media</p>
-                <p>Our Ethos</p>
-                <p>Buy In Bulk</p>
-                <p>Sell With Us</p>
+                <div className='details'>
+                    <p>Who We Are</p>
+                    <p>Why Choose Us</p>
+                    <p>What We Do</p>
+                    <p>Giving Back</p>
+                    <p>Media</p>
+                    <p>Our Ethos</p>
+                    <p>Buy In Bulk</p>
+                    <p>Sell With Us</p>
+                </div>
             </div>
             <div>
                 <Zoom top cascade><h3 className='footer-header text-info'>Policies</h3></Zoom>
@@ -50,7 +52,7 @@ const Footer = () => {
 
             </div>
             <div>
-                <Zoom top cascade><h3 className='footer-header text-info'>Contact Us</h3> </Zoom>
+                <Zoom top cascade><h3 className='footer-header text-info'>Contact Us☎</h3> </Zoom>
 
                 <Flip right cascade>
                     <div className='details'>

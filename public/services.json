@@ -90,13 +90,13 @@
         "img": "https://i.ibb.co/MGbMK2X/wine-Cabinet.webp"
     },
     {
-        "name": "Dining Furniture",
+        "name": "Table Furniture",
         "price": "550",
         "sold": "15",
         "quantity": "35",
         "supplierName": "Adrita Begum",
         "description": "True to original modernist arching design True to original curvature and dimension profile The wood has been uniformly kiln dried to a stabilized moisture level Triple sanded wood for the smoothest possible surfaces",
-        "img": "https://i.ibb.co/s68VNz4/STO-SB-PLATFORM-ASH.jpg"
+        "img": "https://i.ibb.co/RgHxS0f/table.jpg"
     },
     {
         "name": "CABINET",
@@ -105,6 +105,6 @@
         "quantity": "42",
         "supplierName": "Sabila Nur",
         "description": "The Platform Credenza. Created around the simple yet effective architectural technique of creating distance by adding space between adjoining platforms.",
-        "img": "https://i.ibb.co/b345BWM/Coffee-Table.webp"
+        "img": "https://i.ibb.co/3FBwYkh/cabinet.jpg"
     }
 ]

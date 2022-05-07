@@ -1,9 +1,3 @@
-.serviceAdd-input {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-}
-
 .delivered {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -15,40 +9,23 @@
 
 .services-details {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
-    .serviceAdd-input {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
     .services-details {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .serviceAdd-input {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
     .services-details {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 }

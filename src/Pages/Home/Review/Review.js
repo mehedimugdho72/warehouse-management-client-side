@@ -12,7 +12,7 @@ const Review = (props) => {
                         <img src={picture} alt='' />
                         <div className='review-details'>
                             <h4>{name}</h4>
-                            <h6>Ratings: {ratings}</h6>
+                            <p>Ratings: ⭐⭐⭐⭐⭐</p>
                         </div>
                     </div>
                 </Flip>

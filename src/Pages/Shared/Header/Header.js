@@ -9,7 +9,6 @@ import './Header.css';
 
 const Header = () => {
     const [user, loading] = useAuthState(auth);
-
     const handleSignOut = () => {
         signOut(auth);
     }
@@ -21,26 +20,29 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav'>
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <h1 className='text-info me-5 project-title'>Star Furniture</h1>
+                    <h1 className='text-info me-5 project-title fw-bolder'>⭐Star Furniture</h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="home" className='text-info'>home</Nav.Link>
-                        <Nav.Link as={Link} to="blogs" className='text-info'>Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="home" className='text-info fw-bolder'>home</Nav.Link>
+                        <Nav.Link as={Link} to="blogs" className='text-info fw-bolder'>Blogs</Nav.Link>
                         {
                             user && <>
-                                <Nav.Link as={Link} to="manageInventories" className='text-info'>Manage inventories</Nav.Link>
-                                <Nav.Link as={Link} to="myItems" className='text-info'>My Items</Nav.Link>
+                                <Nav.Link as={Link} to="manageInventories" className='text-info fw-bolder'>Manage inventories</Nav.Link>
+                                <Nav.Link as={Link} to="myItems" className='text-info fw-bolder'>My Items</Nav.Link>
                             </>
                         }
+
                     </Nav>
+                    <div>
+                        <img src={user?.photoURL} style={{ borderRadius: "50%", width: "2.5rem", marginRight: "0.5rem" }} alt="" />
+                    </div>
                     <Nav>
-                        <Nav.Link as={Link} to="about" className='text-info'>About</Nav.Link>
                         {user ?
-                            <button onClick={() => handleSignOut()} className='btn btn-info'>Sign Out</button>
+                            <button onClick={() => handleSignOut()} className='btn btn-info fw-bolder'>Sign Out</button>
                             :
-                            <Nav.Link as={Link} to="login" className='text-white'>
+                            <Nav.Link as={Link} to="login" className='text-info fw-bolder'>
                                 Login
                             </Nav.Link>}
                     </Nav>

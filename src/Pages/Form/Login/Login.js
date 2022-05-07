@@ -93,19 +93,19 @@ const Login = () => {
             Please provide a valid password.
           </Form.Control.Feedback>
         </Form.Group>
-        <Button style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100' variant="info" type="submit">
+        <Button style={{ height: "60px" }} className='btn btn-lg mx-auto d-block w-100 fw-bolder' variant="info" type="submit">
           Login
         </Button>
       </Form>
       {errorElement}
       <div className='m-4'>
-        <p className='text-center mt-2 '>New to Start Furniture? <span onClick={navigateRegister}><u>Please Register</u></span></p>
-        <p className='text-center mt-2 '>Forget Password?<span className='ms-2' onClick={resetPassword}><u>Reset Password</u></span></p>
+        <p className='text-center mt-2 '>New to Start Furniture? <span onClick={navigateRegister}><u className='text-info'>Please Register</u></span></p>
+        <p className='text-center mt-2 '>Forget Password?<span className='ms-2' onClick={resetPassword}><u className='text-info'>Reset Password</u></span></p>
       </div>
       <div className='input-wrapper'>
         <button onClick={() => signInWithGoogle()} className='google-auth'>
           <img src={GoogleLogo} alt='' />
-          <p className='mt-3'> Continue with Google </p>
+          <p className='mt-3 fw-bolder'> Continue with Google </p>
         </button>
       </div>
       <ToastContainer />

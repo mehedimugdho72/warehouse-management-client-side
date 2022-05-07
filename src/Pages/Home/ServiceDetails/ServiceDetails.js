@@ -1,43 +1,62 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import QuantityAdded from './QuantityAdded/QuantityAdded';
 import './ServiceDetails.css';
+import ReactImageMagnify from 'react-image-magnify';
 
 const ServiceDetails = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({})
+
+    // Single product
     useEffect(() => {
         const url = `http://localhost:5000/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
-
+   
     return (
         <div>
             <div>
                 <div>
                     <div>
-                        <div className=' text-center mt-5 rounded-3
-                col-lg-5 col-md-10 col-sm-12 col-12 mx-auto' data-aos="flip-up">
+
+                        <div className=' mt-5 rounded-3
+                col-lg-11 col-md-10 col-sm-12 col-12 mx-auto' data-aos="flip-up">
                             <div className='service services-details shadow-lg' data-aos="flip-left"
                                 data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
-                                <img src={product.img} alt="" />
-                                <h3>{product.name}</h3>
-                                <h5>Price:-$ {product.price}</h5>
-                                <h5>Quantity:-{product.quantity}</h5>
-                                <h5>ID:-{product._id}</h5>
-                                <h5>Sold:-{product.sold}</h5>
-                                <p>{product.description}</p>
-                                <h5>Supplier:-{product.supplierName}</h5>
-                                <button type="button" style={{ borderRadius: "50px" }} className="btn btn-info btn-md">Book {product.name}</button>
+                                <div>
+                                    <ReactImageMagnify {...{
+                                        smallImage: {
+                                            alt: 'Wristwatch by Ted Baker London',
+                                            isFluidWidth: true,
+                                            src: product.img
+                                        },
+                                        largeImage: {
+                                            src:  product.img,
+                                            width: 1200,
+                                            height: 1800
+                                        }
+                                    }} />
+                                </div>
+                                <div className='ms-3'>
+                                    <h3>{product.name}</h3>
+                                    <h5>Price:-$ {product.price}</h5>
+                                    <h5>Quantity:-{product.quantity}</h5>
+                                    <h5>ID:-{product._id}</h5>
+                                    <h5>Sold:-{product.sold}</h5>
+                                    <p>{product.description}</p>
+                                    <h5>Supplier:-{product.supplierName}</h5>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                     <div data-aos="zoom-in-down">
-                        <div className='text-center rounded-3
+                        <div className='text-center mt-5 rounded-3
                 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
                             <div className='delivered'>
                                 <div data-aos="zoom-in">
@@ -49,7 +68,7 @@ const ServiceDetails = () => {
                                 <h2 className='text-center mt-3 text-white'>Quantity: {product.quantity}</h2>
                                 <hr className='text-white' style={{ height: '3px' }} />
                                 <div className="d-flex justify-content-center">
-                                    <Button variant="info" className='btn-lg mb-3'>
+                                    <Button variant="info" className='btn-lg mb-3 fw-bolder'>
                                         Delivered
                                     </Button>
                                 </div>
@@ -57,50 +76,7 @@ const ServiceDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='text-white' data-aos="flip-left">
-                    <form>
-                        <div className='mx-auto m-5 border p-5 rounded-3 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                            <h1 className='text-center'>
-                                Please Details Information for added
-                            </h1>
-                            <div className='serviceAdd-input'>
-                                <div className="mb-3 ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Name</label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Your name" />
-                                </div>
-                                <div className="mb-3 ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">image</label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="image URL" />
-                                </div>
-                                <div className=" ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Short description</label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="description" />
-                                </div>
-                            </div>
-                            <div className='justify-content-center serviceAdd-input'>
-                                <div className="mb-3 ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Price</label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Price" />
-                                </div>
-                                <div className="mb-3 ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Quantity</label>
-                                    <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="Quantity" />
-                                </div>
-                                <div className="mb-3 ms-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Supplier name</label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Supplier name" />
-                                </div>
-                            </div>
-                            <div className="mb-3">
-                                <label for="exampleFormControlTextarea1" className="form-label">Write your message here</label>
-                                <textarea className="form-control rounded-3 " id="exampleFormControlTextarea1" rows="7" placeholder='Message' readOnly></textarea>
-                            </div>
-                            <div className='d-flex justify-content-center mt-4'>
-                                <input className="btn btn-info btn-lg" type="submit" value="Add Service" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <QuantityAdded product={product}></QuantityAdded>
             </div>
         </div>
     );

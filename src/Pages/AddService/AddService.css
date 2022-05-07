@@ -1,0 +1,27 @@
+.serviceAdd-input {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    grid-gap: 1.2rem;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .serviceAdd-input {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .serviceAdd-input {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
