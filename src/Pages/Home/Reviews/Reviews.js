@@ -6,13 +6,13 @@ import Typed from 'react-typed';
 const Reviews = () => {
     const [clientReviews, SetClientReviews] = useState([])
     useEffect(() => {
-        fetch("data.json")
+        fetch("https://tranquil-beyond-66752.herokuapp.com/review")
             .then(res => res.json())
             .then(data => SetClientReviews(data))
     }, [])
     return (
         <div className='customer-reviews'>
-            <h1 style={{ textAlign: "center", fontSize: "45px", color:"white"}}>
+            <h1 style={{ textAlign: "center", fontSize: "45px", color: "white" }}>
                 <Typed
                     strings={[
                         'Customer Reviews']}

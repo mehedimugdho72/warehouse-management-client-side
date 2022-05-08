@@ -10,7 +10,7 @@ const ManageInventories = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are You Sure?")
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://tranquil-beyond-66752.herokuapp.com/product/${id}`
             fetch(url, {
                 method: "DELETE",
             })
@@ -39,7 +39,7 @@ const ManageInventories = () => {
                 {
                     services.map(service =>
                         <div key={service._id}
-                        className='inventory shadow-lg' data-aos="flip-left"
+                            className='inventory shadow-lg' data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
                             <img src={service.img} alt="" />

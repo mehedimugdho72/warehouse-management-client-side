@@ -13,7 +13,7 @@ const AddService = () => {
     const onSubmit = (data, event) => {
         console.log(data)
         event.target.reset()
-        const url = `http://localhost:5000/product`
+        const url = `https://tranquil-beyond-66752.herokuapp.com/product`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -31,9 +31,8 @@ const AddService = () => {
             <h1 className='text-center mb-4'>Please add service</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='serviceAdd-input'>
-                    <input placeholder={user.email} className='mb-2' type="text" {...register("email")} readOnly />
+                    <input value={user.email} className='mb-2' type="text" {...register("email")} readOnly />
                     <input placeholder='name' className='mb-2' {...register("name", { required: true, maxLength: 20 })} />
-                    {/* <textarea placeholder='description' className='mb-2' {...register("description", { pattern: /^[A-Za-z]+$/i })} /> */}
                     <input placeholder='price' className='mb-2' type="number" {...register("price")} />
                     <input placeholder='quantity' className='mb-2' type="number" {...register("quantity")} />
                     <input placeholder='img' className='mb-2' type="text" {...register("img")} />

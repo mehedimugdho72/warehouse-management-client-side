@@ -8,6 +8,7 @@ import auth from '../../../Firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 const Login = () => {
   const [validated, setValidated] = useState(false);
@@ -52,11 +53,17 @@ const Login = () => {
     }
 
     setValidated(true);
-    event.preventDefault();
+
 
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    signInWithEmailAndPassword(email, password)
+    await signInWithEmailAndPassword(email, password)
+    await signInWithEmailAndPassword(email, password)
+    const { data } = await axios.post('https://tranquil-beyond-66752.herokuapp.com/login', { email })
+    console.log(data)
+    localStorage.setItem('accessToken', data.accessToken)
+    navigate(from, { replace: true });
+    event.preventDefault();
   }
 
   const navigateRegister = () => {

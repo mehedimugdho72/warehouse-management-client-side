@@ -8,13 +8,13 @@ import Register from './Pages/Form/Register/Register';
 import Login from './Pages/Form/Login/Login';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Header from './Pages/Shared/Header/Header';
-import MyItems from './Pages/MyItems/MyItems';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Blogs from './Pages/Blogs/Blogs';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import ServiceDetails from './Pages/Home/ServiceDetails/ServiceDetails';
 import AddService from './Pages/AddService/AddService';
 import { ToastContainer } from 'react-toastify';
+import MyItems from './Pages/MyItems/MyItems';
 
 
 
@@ -38,7 +38,7 @@ function App() {
         } />
         <Route path="/myItems" element={
           <RequireAuth>
-            <MyItems />
+            <MyItems/>
           </RequireAuth>
         } />
         <Route path="/addService" element={<AddService />} />
