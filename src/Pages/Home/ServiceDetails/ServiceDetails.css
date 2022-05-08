@@ -22,6 +22,14 @@
     align-items: center;
     justify-content: center;
 }
+.update-btn{
+    background-color: #CAD5E2;
+    color: black;
+    padding: 10px 19px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .services-details {
