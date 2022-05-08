@@ -1,6 +1,6 @@
 # Project Name:- Star Furniture Warehouse.
-## [Firebase Live Site Hosting link](https://star-furniture-63cf3.web.app/blogs).
-## [Server Site Code link](https://health-check-df55d.firebaseapp.com/).
+## [Firebase Live Site Hosting link](https://star-furniture-63cf3.web.app/).
+## [Server Site Code link](/).
 
 ## Project Description:-
 * This is basically a warehouse website,
@@ -8,7 +8,7 @@
 * Questions have been answered using accordion in blogs.
 * A complete full stack website has been created.Every part of which is mobile and pc responsive,
 * Basically this website The focus is on the work of the backend.
-## Tecnology use:- Firebase, react router, react router hooks, react bootstrap , react toastify,react reavel, plain css etc.
+## Tecnology use:- Firebase, react router, react router hooks, react bootstrap , react toastify,react reavel,react AOS,react image-magnify,react typed.js,neumorphism, plain css etc.
 
 In the project directory, you can run:
 

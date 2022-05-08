@@ -5,24 +5,25 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <div className='about ms-3'>
-                <div className='about-title'>
+            <div>
+                <Zoom top cascade>
                     <h3 className='text-info footer-header'>About Us</h3>
-                </div>
-                <div className='details'>
-                    <p>Who We Are</p>
-                    <p>Why Choose Us</p>
-                    <p>What We Do</p>
-                    <p>Giving Back</p>
-                    <p>Media</p>
-                    <p>Our Ethos</p>
-                    <p>Buy In Bulk</p>
-                    <p>Sell With Us</p>
-                </div>
+                </Zoom>
+                <Flip right cascade>
+                    <div className='details'>
+                        <p>Who We Are</p>
+                        <p>Why Choose Us</p>
+                        <p>What We Do</p>
+                        <p>Giving Back</p>
+                        <p>Media</p>
+                        <p>Our Ethos</p>
+                        <p>Buy In Bulk</p>
+                        <p>Sell With Us</p>
+                    </div>
+                </Flip>
             </div>
             <div>
                 <Zoom top cascade><h3 className='footer-header text-info'>Policies</h3></Zoom>
-
                 <Flip right cascade>
                     <div className='details'>
                         <p>Shipping & Delivery</p>
@@ -36,8 +37,7 @@ const Footer = () => {
 
             </div>
             <div>
-                <Zoom top cascade><h3 className='footer-header text-info'>Customer Service</h3> </Zoom>
-
+                <Zoom top cascade><h3 className='footer-header text-info'>Customer <br></br>Service</h3> </Zoom>
                 <Flip right cascade>
                     <div className='details'>
                         <p>Write a Testimonial</p>
@@ -52,11 +52,9 @@ const Footer = () => {
 
             </div>
             <div>
-                <Zoom top cascade><h3 className='footer-header text-info'>Contact Us☎</h3> </Zoom>
-
+                <Zoom top cascade><h3 className='footer-header text-info'>Contact Us ☎</h3> </Zoom>
                 <Flip right cascade>
                     <div className='details'>
-
                         <p>USA, California 20, First Avenue, California
                         </p>
                         <p>Tel: +7 998 71 150 ##
@@ -65,9 +63,7 @@ const Footer = () => {
                         </p>
                         <p>rana286090@gmail.com</p>
                     </div>
-
                 </Flip>
-
             </div>
         </div>
     );

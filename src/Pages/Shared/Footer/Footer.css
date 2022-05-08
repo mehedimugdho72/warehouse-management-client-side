@@ -2,9 +2,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: white;
-    background-color: 
-    #112b49;
-    padding: 0.5rem;
+    background-color:
+        #112b49;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.5px);
@@ -12,79 +11,48 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 0;
+    padding: 2rem;
 }
-.about-title{
-    display: flex;
-}
-.footer-header{
+.footer-header {
     font-weight: 700;
 }
 /* --------------------------------------------
         Responsive for mobile device
 -------------------------------------------- */
-/* @media only screen and (max-width: 600px) {
-    
-} */
-
 @media (min-width: 320px) and (max-width: 480px) {
-    .footer-container{
+    .footer-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .about-title img{
-        height: 2rem;
-        width: 2rem;
-      }
-      .about-title h3{
-          font-size: xx-small;
-  
-      }
-      .about-title p{
-          font-size: xx-small;
-      }
-      .about p{
-          font-size: xx-small;
-      }
-      .footer-header{
-          font-size: medium;
-          margin-left: 34%;
-      }
-      .details p{
-          font-size: xx-small;
-      }
-      .details{
-        margin-left: 38%;
+    .details {
+        text-align: center;
+    }
+    .footer-header {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .details p {
+        font-size: large;
     }
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
-    .footer-container{
+    .footer-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 7.1rem;
-        
-    } 
-    .details{
-        margin-left: 5rem;
-    } 
-    .about-title img{
-        height: 2rem;
-        width: 2rem;
-      }
-      .about-title h3{
-          font-size: xx-small;
-  
-      }
-      .about-title p{
-          font-size: xx-small;
-      }
-      .about p{
-          font-size: xx-small;
-      }
-      .footer-header{
-          font-size: medium;
-          margin-left: 25%;
-      }
-      .details p{
-          font-size: xx-small;
-      }  
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .footer-header {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .details p {
+        font-size: large;
+    }
 }

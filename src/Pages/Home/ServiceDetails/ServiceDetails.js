@@ -1,13 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import QuantityAdded from './QuantityAdded/QuantityAdded';
 import './ServiceDetails.css';
 import ReactImageMagnify from 'react-image-magnify';
 
 const ServiceDetails = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({})
+
 
     // Single product
     useEffect(() => {
@@ -16,7 +16,7 @@ const ServiceDetails = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
-   
+    
     return (
         <div>
             <div>
@@ -36,7 +36,7 @@ const ServiceDetails = () => {
                                             src: product.img
                                         },
                                         largeImage: {
-                                            src:  product.img,
+                                            src: product.img,
                                             width: 1200,
                                             height: 1800
                                         }
@@ -76,7 +76,18 @@ const ServiceDetails = () => {
                         </div>
                     </div>
                 </div>
-                <QuantityAdded product={product}></QuantityAdded>
+                <div data-aos="zoom-in-down">
+                    <div className='text-center rounded-3 mb-5 mt-5
+                col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
+                        <form className='quantityAdded'>
+                            <h1>Quantity:- {product.name}</h1>
+                            <input type="text" name="name" className='mt-1 text-center' style={{ height: "50px", width: "17rem", borderRadius: "10px" }} placeholder="Quantity Added" />
+                            <hr className='text-white' style={{ height: '3px' }} />
+                            <input 
+                             type="submit" value="Restock Inventory" className='mb-3 fw-bolder bg-info rounded-3 border-0'/>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );
