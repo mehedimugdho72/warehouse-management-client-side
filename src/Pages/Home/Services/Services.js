@@ -4,7 +4,7 @@ import './Services.css';
 import Typed from 'react-typed';
 
 const Services = () => {
-    const [services, setServices] = useService()
+    const [services] = useService()
     const homeServices = services.slice(0, 6)
     return (
         <div className='service-container'>
