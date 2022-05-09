@@ -15,7 +15,7 @@ const Service = ({ service }) => {
             <div className='service shadow-lg' data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
-                <img src={img} alt="" />
+                <img style={{height:"10rem"}} src={img} alt="" />
                 <h3>{name}</h3>
                 <h5>Price:-$ {price}</h5>
                 <h5>Quantity:-{quantity}</h5>

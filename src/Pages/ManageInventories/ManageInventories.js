@@ -42,10 +42,11 @@ const ManageInventories = () => {
                             className='inventory shadow-lg' data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
-                            <img src={service.img} alt="" />
+                            <img style={{height:"10rem"}} src={service.img} alt="" />
                             <h3>{service.name}</h3>
                             <h5>Price:-$ {service.price}</h5>
                             <h5>Quantity:-{service.quantity}</h5>
+                            <h5>Supplier:-{service.supplierName}</h5>
                             <button onClick={() => handleDelete(service._id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-info btn-md mx-auto d-block fw-bolder">DELETE</button>
                         </div>
                     )
