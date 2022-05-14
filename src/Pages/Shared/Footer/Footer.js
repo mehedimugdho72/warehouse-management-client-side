@@ -61,7 +61,7 @@ const Footer = () => {
                         </p>
                         <p>Fax: +7 998 71 150 ##
                         </p>
-                        <p>rana286090@gmail.com</p>
+                        <p>mehedimugdho98@gmail.com</p>
                     </div>
                 </Flip>
             </div>
